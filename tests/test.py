@@ -44,7 +44,13 @@ def plot_color_gradients(category, cmap_list):
 
 plot_color_gradients(
     "Bad",
-    ["painbow", "painbow_r", "michel-levy", "michel-levy_r"],
+    [
+        "painbow",
+        "michel-levy",
+        "original-highlighters",
+        "pastel-highlighters",
+        "banana",
+    ],
 )
 plt.savefig("../figs/bad_color_maps.png", dpi=600)
 plt.show()

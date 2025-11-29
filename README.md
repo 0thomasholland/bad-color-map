@@ -2,6 +2,8 @@
 
 Some bad color maps for [Matplotlib](https://matplotlib.org/) to make plotting amusing figures easier.
 
+![Painbow Color Map](https://imgs.xkcd.com/comics/painbow_award.png)
+
 ## Color maps
 
 ![Bad Color Maps](https://raw.githubusercontent.com/0thomasholland/bad-color-map/refs/heads/main/figs/bad_color_maps.png)
