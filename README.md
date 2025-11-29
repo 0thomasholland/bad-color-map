@@ -4,9 +4,9 @@ Some bad color maps for [Matplotlib](https://matplotlib.org/) to make plotting a
 
 ## Color maps
 
-![Bad Color Maps](figs/bad_color_maps.png)
+![Bad Color Maps](https://raw.githubusercontent.com/0thomasholland/bad-color-map/refs/heads/main/figs/bad_color_maps.png)
 
-![Lightness plots](figs/lightness.png)
+![Lightness plots](https://raw.githubusercontent.com/0thomasholland/bad-color-map/refs/heads/main/figs/lightness.png)
 
 Not the most ideal...
 
