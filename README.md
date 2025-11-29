@@ -32,3 +32,5 @@ plt.XYZ(
 
 - Painbow: [XKCD 2537](https://xkcd.com/2537/)
 - Michel-Levy: Bjørn Eske Sørensen; A revised Michel-Lévy interference colour chart based on first-principles calculations. European Journal of Mineralogy 2012;; 25 (1): 5–10. doi: https://doi.org/10.1127/0935-1221/2013/0025-2252
+- [Pastel Highlighters](https://www.stabilo.com/uk/highlighter-stabilo-boss-original-pastel/7015-02-5)
+- [Original Highlighters](https://www.stabilo.com/uk/highlighter-stabilo-boss-original/7015-01-5)

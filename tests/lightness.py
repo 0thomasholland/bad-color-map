@@ -15,14 +15,16 @@ cmap_list = [
 # Number of colormap samples
 x = np.linspace(0.0, 1.0, 256)
 
-# Horizontal spacing between colormaps
-dc = 1.4
+# Grid layout: 3 columns
+ncols = 3
+nrows = int(np.ceil(len(cmap_list) / ncols))
 
-fig, ax = plt.subplots(figsize=(9, 4))
-
-locs = []  # locations for text labels
+fig, axes = plt.subplots(nrows, ncols, figsize=(12, 3 * nrows))
+axes = axes.flatten()
 
 for j, cmap in enumerate(cmap_list):
+    ax = axes[j]
+
     # Get RGB values for colormap and convert to CAM02-UCS colorspace
     # lab[0, :, 0] is the lightness
     rgb = mpl.colormaps[cmap](x)[np.newaxis, :, :3]
@@ -32,23 +34,19 @@ for j, cmap in enumerate(cmap_list):
     y_ = lab[0, :, 0]
     c_ = x
 
-    ax.scatter(x + j * dc, y_, c=c_, cmap=cmap, s=300, linewidths=0.0)
+    ax.scatter(x, y_, c=c_, cmap=cmap, s=100, linewidths=0.0)
 
-    # Store locations for colormap labels (center of each colormap)
-    locs.append(x[int(x.size / 2.0)] + j * dc)
+    # Set up the axis limits
+    ax.set_xlim(-0.05, 1.05)
+    ax.set_ylim(0.0, 100.0)
+    ax.set_title(cmap, fontsize=10)
+    ax.set_ylabel("Lightness $L^*$", fontsize=10)
+    ax.set_xticklabels([])
+    ax.set_xticks([])
 
-# Set up the axis limits
-ax.set_xlim(-0.1, x[-1] + (len(cmap_list) - 1) * dc + 0.1)
-ax.set_ylim(0.0, 100.0)
-
-# Set up labels for colormaps
-ax.xaxis.set_ticks_position("top")
-ticker = mpl.ticker.FixedLocator(locs)
-ax.xaxis.set_major_locator(ticker)
-formatter = mpl.ticker.FixedFormatter(cmap_list)
-ax.xaxis.set_major_formatter(formatter)
-ax.xaxis.set_tick_params(rotation=50)
-ax.set_ylabel("Lightness $L^*$", fontsize=12)
+# Hide any unused subplots
+for j in range(len(cmap_list), len(axes)):
+    axes[j].set_visible(False)
 
 plt.tight_layout()
 plt.show()
