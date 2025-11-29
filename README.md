@@ -1,5 +1,13 @@
 # Bad colo(u)r map
 
+![PyPI - Version](https://img.shields.io/pypi/v/bad-color-map)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bad-color-map)
+![PyPI - License](https://img.shields.io/pypi/l/bad-color-map)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/0thomasholland/bad-color-map/publish.yml?branch=main)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/0thomasholland/bad-color-map)
+![GitHub last commit](https://img.shields.io/github/last-commit/0thomasholland/bad-color-map)
+
+
 Some bad color maps for [Matplotlib](https://matplotlib.org/) to make plotting amusing figures easier.
 
 ![Painbow Color Map](https://imgs.xkcd.com/comics/painbow_award.png)
