@@ -1,6 +1,6 @@
 [project]
 name = "bad-color-map"
-version = "0.2.0"
+version = "0.2.1"
 description = ""
 authors = [
     { name = "Thomas Holland", email = "101332229+0thomasholland@users.noreply.github.com" },
