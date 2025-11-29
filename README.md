@@ -28,6 +28,10 @@ plt.XYZ(
 
 ```
 
+
+![](figs/cielab_grid.png)
+
+
 ## Sources:
 
 - Painbow: [XKCD 2537](https://xkcd.com/2537/)
